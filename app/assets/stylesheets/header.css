@@ -1,5 +1,14 @@
 * {
     box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rampart One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 header {
@@ -18,15 +27,6 @@ header {
     }
 
         .header-title {
-            font-family: 'Crimson Text', serif;
-            font-family: 'M PLUS Rounded 1c', sans-serif;
-            font-family: 'Noto Sans JP', sans-serif;
-            font-family: 'Oswald', sans-serif;
-            font-family: 'Rampart One', sans-serif;
-            font-family: 'Roboto', sans-serif;
-            font-family: 'Space Grotesk', sans-serif;
-            font-family: 'Teko', sans-serif;
-            font-family: 'Work Sans', sans-serif;
             font-size: 36px;
             font-weight: 600;
         }
@@ -50,12 +50,6 @@ header {
 
             .log-in {
                 line-height: 80px;
-                color: black;
-                font-size: 16px;
-                text-decoration: none;
-            }
-
-            .sign-up {
                 color: black;
                 font-size: 16px;
                 text-decoration: none;
