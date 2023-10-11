@@ -3,8 +3,9 @@
 }
 
 header {
+    display: flex;
     width: 100vw;
-    height: 10vh;
+    height: 80px;
     padding: 0 50px;
     border-bottom: 1px solid gray;
 }
@@ -25,7 +26,10 @@ header {
 
     .header-right {
         width: 30%;
+        height: 100%;
         margin: 0 auto;
+        text-align: center;
+        line-height: 40px;
     }
 
         .log-out {
