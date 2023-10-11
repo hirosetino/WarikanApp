@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    border-bottom: 1px solid gray;
+}
+
+    .header-texts {
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+        .header-title {
+            font-size: 20px;
+        }
+
+            .header-title-strong {
+                color: crimson;
+                font-size: 28px;
+            }
