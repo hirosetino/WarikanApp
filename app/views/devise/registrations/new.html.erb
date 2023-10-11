@@ -1,0 +1,41 @@
+<%= render "shared/second-header" %>
+
+<%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
+
+    <div class="registration-container">
+        <div class="registration-top">
+            <h1>Account Create</h1>
+        </div>
+
+        <div class="form-group">
+            <div class='form-text-wrap'>
+                <label class="form-text">nickname</label>
+            </div>
+            <%= f.text_area :nickname, class:"input-default", id:"nickname", maxlength:"40", autofocus: true %>
+        </div>
+            <div class="form-group">
+              <div class='form-text-wrap'>
+                  <label class="form-text">email</label>
+              </div>
+              <%= f.email_field :email, class:"input-default", id:"email" %>
+        </div>
+        <div class="form-group">
+            <div class='form-text-wrap'>
+                <label class="form-text">password</label>
+            </div>
+            <%= f.password_field :password, class:"input-default", id:"password", placeholder:"6文字以上の半角英数字" %>
+            <p class='info-text'>※Please include both letters and numbers</p>
+        </div>
+        <div class="form-group">
+            <div class='form-text-wrap'>
+                <label class="form-text">confirmation password</label>
+            </div>
+            <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"パスワード再入力" %>
+        </div>
+
+        <div class='account-create'>
+            <%= f.submit "signup" , class:"account-create-btn" %>
+        </div>
+    </div>
+
+<% end %>
