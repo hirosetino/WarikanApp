@@ -16,7 +16,7 @@ header {
     align-items: center;
     width: 100vw;
     height: 80px;
-    padding: 0 50px;
+    padding: 0 100px;
     border-bottom: 1px solid gray;
 }
 
@@ -35,28 +35,13 @@ header {
         width: 30%;
         height: 100%;
         margin: 0 auto;
-        text-align: center;
-        
+        text-align: right;
     }
 
-        .header-right ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            list-style: none;
+        .log-out {
+            display: inline-block;
+            line-height: 80px;
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
         }
-
-            .log-in {
-                line-height: 80px;
-                color: black;
-                font-size: 16px;
-                text-decoration: none;
-            }
-
-            .log-out {
-                color: black;
-                font-size: 16px;
-                text-decoration: none;
-            }
