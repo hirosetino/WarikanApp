@@ -32,6 +32,26 @@ header {
         line-height: 40px;
     }
 
-        .log-out {
-            font-size: 16px;
+        .header-right ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
         }
+
+            .log-in {
+                color: black;
+                font-size: 16px;
+                text-decoration: none;
+            }
+
+            .sign-up {
+                color: black;
+                font-size: 16px;
+                text-decoration: none;
+            }
+
+            .log-out {
+                color: black;
+                font-size: 16px;
+                text-decoration: none;
+            }
