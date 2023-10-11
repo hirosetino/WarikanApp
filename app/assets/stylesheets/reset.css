@@ -1,0 +1,86 @@
+/* Box sizing rules */
+/* Box sizing縺ｮ螳夂ｾｩ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/* Remove default padding */
+/* 繝�ヵ繧ｩ繝ｫ繝医�padding繧貞炎髯､ */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ 
+/* Remove default margin */
+/* 繝�ヵ繧ｩ繝ｫ繝医�margin繧貞炎髯､ */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ 
+/* Set core body defaults */
+/* body縺ｮ繝�ヵ繧ｩ繝ｫ繝医ｒ螳夂ｾｩ */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ 
+/* Remove list styles on ul, ol elements with a class attribute */
+/* class螻樊ｧ繧呈戟縺､ul縲｛l隕∫ｴ�縺ｮ繝ｪ繧ｹ繝医せ繧ｿ繧､繝ｫ繧貞炎髯､ */
+ul[class] {
+  list-style: none;
+}
+ 
+/* A elements that don't have a class get default styles */
+/* class繧呈戟縺溘↑縺�ｦ∫ｴ�縺ｯ繝�ヵ繧ｩ繝ｫ繝医�繧ｹ繧ｿ繧､繝ｫ繧貞叙蠕� */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+ 
+/* Make images easier to work with */
+/* img隕∫ｴ�縺ｮ謇ｱ縺�ｒ邁｡蜊倥↓縺吶ｋ */
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+/* Natural flow and rhythm in articles by default */
+/* article隕∫ｴ�蜀��隕∫ｴ�縺ｫ閾ｪ辟ｶ縺ｪ豬√ｌ縺ｨ繝ｪ繧ｺ繝�繧貞ｮ夂ｾｩ */
+article > * + * {
+  margin-top: 1em;
+}
+ 
+/* Inherit fonts for inputs and buttons */
+/* input繧�button縺ｪ縺ｩ縺ｮ繝輔か繝ｳ繝医�邯呎価繧貞ｮ夂ｾｩ */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+ 
+/* Remove all animations and transitions for people that prefer not to see them */
+/* 隕九◆縺上↑縺�ｺｺ逕ｨ縺ｫ縲√☆縺ｹ縺ｦ縺ｮ繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ縺ｨ繝医Λ繝ｳ繧ｸ繧ｷ繝ｧ繝ｳ繧貞炎髯､ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
