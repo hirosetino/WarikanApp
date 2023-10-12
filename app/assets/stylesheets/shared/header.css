@@ -45,3 +45,7 @@ header {
             font-size: 16px;
             text-decoration: none;
         }
+
+        .log-out:hover {
+            color: gray;
+        }
