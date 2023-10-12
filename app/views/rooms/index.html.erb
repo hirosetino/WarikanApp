@@ -1,1 +1,14 @@
 <%= render "shared/header" %>
+
+<main>
+    <div class="container">
+        <div class="main-top">
+            <p class="nickname"><%= current_user.nickname %></p>
+        </div>
+        <div class="room-create-area">
+            <%= link_to "Room create", "#", class: "room-create-link" %>
+        </div>
+        <div class="rooms-area">
+        </div>
+    </div>
+</main>

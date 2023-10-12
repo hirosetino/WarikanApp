@@ -47,5 +47,5 @@ header {
         }
 
         .log-out:hover {
-            color: gray;
+            text-shadow: 2px 2px 2px gray;
         }

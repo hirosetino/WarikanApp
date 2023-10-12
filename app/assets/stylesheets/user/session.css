@@ -65,3 +65,7 @@
                     font-size: 18px;
                     font-weight: bold;
                 }
+
+                .sign-up:hover {
+                    color: gray;
+                }
