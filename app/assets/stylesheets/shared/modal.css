@@ -58,3 +58,7 @@
                     border: none;
                     color: white;
                 }
+
+                .room-create-btn:hover {
+                    box-shadow: 0 0 10px #424242;
+                }
