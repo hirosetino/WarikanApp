@@ -1,6 +1,6 @@
 <div class="modal" id="confirmationModal">
     <div class="room-create-modal">
-        <%= form_with model: @room, class: "room-create-form", local: true do |f| %>
+        <%= form_with model: @room, url: rooms_path, class: "room-create-form", local: true do |f| %>
             <div class="modal-top">
                 <p class="modal-top-text">＜ Room Name ＞</p>
             </div>
