@@ -9,7 +9,7 @@ document.addEventListener('turbo:load', function () {
     });
 
     window.addEventListener('click', function (e) {
-        if (e.target === modal) {
+        if (e.target === secondModal) {
             secondModal.style.display = 'none';
         }
     });
