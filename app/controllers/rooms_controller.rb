@@ -13,6 +13,7 @@ class RoomsController < ApplicationController
 
     def show
         @room = Room.find(params[:id])
+        @members = @room.members
     end
     
     private
