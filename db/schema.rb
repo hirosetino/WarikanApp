@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_13_033839) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_16_055734) do
+  create_table "members", charset: "utf8", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "fraction"
+    t.bigint "room_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["room_id"], name: "index_members_on_room_id"
+  end
+
   create_table "rooms", charset: "utf8", force: :cascade do |t|
     t.string "room_name", null: false
     t.bigint "user_id", null: false
@@ -32,5 +41,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_033839) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "members", "rooms"
   add_foreign_key "rooms", "users"
 end
