@@ -1,0 +1,15 @@
+<div class="modal" id="confirmationSecondModal">
+    <div class="room-create-modal">
+        <%= form_with model: @member, url: room_members_path(@room), class: "room-create-form", local: true do |f| %>
+            <div class="modal-top">
+                <p class="modal-top-text">＜ Member Name ＞</p>
+            </div>
+            <div class="modal-form">
+                <%= f.text_area :name, class:"room-name-form", maxlength:"40" %>
+            </div>
+            <div class="modal-bottom">
+                <%= f.submit "Create" ,class:"room-create-btn" %>
+            </div>
+        <% end %>
+    </div>
+</div>
