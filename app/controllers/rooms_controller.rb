@@ -1,5 +1,7 @@
 class RoomsController < ApplicationController
     def index
+        user = current_user
+        @rooms = user.rooms
     end
 
     def create
