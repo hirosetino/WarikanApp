@@ -1,6 +1,7 @@
 class MembersController < ApplicationController
     def create
-        @member = Member.new(member_params)
+        room = Room.find(params[:room_id])
+        @member = room.members.build(member_params)
         if @member.save
             redirect_to room_path(room.id)
         end
@@ -9,6 +10,6 @@ class MembersController < ApplicationController
     private
 
     def member_params
-        params.permit(:name).merge(room_id: room.id)
+        params.permit(:name)
     end
 end
