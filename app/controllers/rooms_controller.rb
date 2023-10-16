@@ -10,6 +10,10 @@ class RoomsController < ApplicationController
             redirect_to root_path
         end
     end
+
+    def show
+        @room = Room.find(params[:id])
+    end
     
     private
 
