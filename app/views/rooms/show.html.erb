@@ -1,1 +1,19 @@
 <%= render "shared/second-header" %>
+
+<div class="show-container">
+    <div class="member-area">
+        <div class="member-area-top">
+            <p class="member-area-text">＜ Member List ＞</p>
+        </div>
+        <div class="member-main">
+            <ul class="member-lists">
+                <li></li>
+            </ul>
+        </div>
+        <div class="member-create-area">
+            <%= link_to "Member create", "#", class: "member-create-link", id: "open_second_modal" %>
+        </div>
+        <%= render "shared/second-modal" %>
+    </div>
+    <div class="calculator-area"></div>
+</div>
