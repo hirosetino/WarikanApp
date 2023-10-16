@@ -16,7 +16,7 @@
             <p class="room-area-text">＜ Rooms ＞</p>
             <% @rooms.each do |room| %>
             <ul class="room-lists">
-                <li><%= link_to room.room_name, "#", class: "room" %></li>
+                <li><%= link_to room.room_name, room_path(room.id), class: "room" %></li>
             </ul>
             <% end %>
         </div>

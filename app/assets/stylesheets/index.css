@@ -58,3 +58,7 @@
                     font-size: 20px;
                     text-decoration: none;
                 }
+
+                .room:hover {
+                    text-shadow: 2px 2px 2px gray;
+                }
