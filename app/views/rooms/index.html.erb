@@ -5,11 +5,20 @@
         <div class="main-top">
             <p class="nickname"><%= current_user.nickname %></p>
         </div>
+
         <div class="room-create-area">
             <%= link_to "Room create", "#", class: "room-create-link", id: "open_modal" %>
         </div>
-        <div class="rooms-area">
-        </div>
+
         <%= render "shared/modal" %>
+
+        <div class="room-area">
+            <p class="room-area-text">＜ Rooms ＞</p>
+            <% @rooms.each do |room| %>
+            <ul class="room-lists">
+                <li><%= link_to room.room_name, "#", class: "room" %></li>
+            </ul>
+            <% end %>
+        </div>
     </div>
 </main>
