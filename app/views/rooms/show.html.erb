@@ -1,19 +1,38 @@
 <%= render "shared/second-header" %>
 
 <div class="show-container">
+    <div class="room-top">
+        <p class="room-name"><%= @room.room_name %></p>
+        <%= link_to "<<back", root_path, class: "back-btn" %>
+    </div>
+
     <div class="member-area">
         <div class="member-area-top">
             <p class="member-area-text">＜ Member List ＞</p>
         </div>
+
         <div class="member-main">
             <ul class="member-lists">
-                <li></li>
+            <% @members.each do |member| %>
+                <li class="member">
+                    <p class="member-name"><%= member.name %></p>
+                    <div class="member-result">
+                        <p class="member-money">¥ </p>
+                        <p class="member-fraction"></p>
+                    </div>
+                </li>
+            <% end %>
             </ul>
         </div>
+
         <div class="member-create-area">
             <%= link_to "Member create", "#", class: "member-create-link", id: "open_second_modal" %>
         </div>
+
         <%= render "shared/second-modal" %>
+
     </div>
-    <div class="calculator-area"></div>
+
+    <div class="calculator-area">
+    </div>
 </div>
