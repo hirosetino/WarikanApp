@@ -19,6 +19,7 @@
                     <div class="member-result">
                         <p class="member-money">¥ </p>
                         <p class="member-fraction"></p>
+
                     </div>
                 </li>
             <% end %>
@@ -33,27 +34,42 @@
 
     </div>
 
-    <div class="calculator-area">
-        <input type="text" class="display" readonly>
-        <div class="buttons">
-            <button class="btn-C">C</button>
-            <button class="btn">/</button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">*</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">-</button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">+</button>
-            <button class="btn">0</button>
-            <button class="btn">00</button>
-            <button class="btn">.</button>
-            <button class="btn">=</button>
+    <div class="show-main">
+        <div class="calculator-area">
+            <input type="text" class="display" readonly>
+            <div class="buttons">
+                <button class="btn-C">C</button>
+                <button class="btn">/</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">*</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">-</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">+</button>
+                <button class="btn">0</button>
+                <button class="btn">00</button>
+                <button class="btn">.</button>
+                <button class="btn">=</button>
+            </div>
+        </div>
+
+        <div class="warikan-area">
+            <div class="share-area">
+                <div class="share-inputs">
+                    <span class="share-text">total:</span><input type="number" class="share-input" id="total">
+                    <button class="fair-share" id="fair_share">Fair Share</button>
+                </div>
+                <span class="share-text">pep person:</span><input type="number" class="share-input" id="per_person" readonly>
+                <span class="share-text">fraction:</span><input type="number" class="share-input" id="fraction" readonly>
+            </div>
+            <div class="fraction-area">
+            </div>
         </div>
     </div>
 </div>
