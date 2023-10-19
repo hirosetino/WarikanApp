@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     resources :rooms, only: [:create, :show] do
         resources :members, only: [:create]
     end
+    get '/members/count', to: 'members#member_count'
 end

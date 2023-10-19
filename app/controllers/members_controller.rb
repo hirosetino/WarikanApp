@@ -7,6 +7,11 @@ class MembersController < ApplicationController
         end
     end
 
+    def member_count
+        member_count = Member.count
+        render json: { member_count: member_count }
+    end
+
     private
 
     def member_params
