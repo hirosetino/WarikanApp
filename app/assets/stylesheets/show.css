@@ -172,6 +172,7 @@
                     .fair-share {
                         background-color: black;
                         margin-left: 50px;
+                        padding: 0px 10px;
                         border: none;
                         color: white;
                         font-size: 20px;
