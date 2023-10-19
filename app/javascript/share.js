@@ -7,8 +7,8 @@ document.addEventListener('turbo:load', function() {
     const memberFraction = document.querySelectorAll('.member-fraction');
 
     fairShareButton.addEventListener('click', function() {
-        const totalValue = parseFloat(totalInput.value);
-        
+        const totalValue = Number(totalInput.value);
+
         // Ajaxリクエストでメンバーの数を取得
         fetch('/members/count.json')
             .then(response => response.json())
