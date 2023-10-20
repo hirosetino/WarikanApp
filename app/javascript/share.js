@@ -4,7 +4,6 @@ document.addEventListener('turbo:load', function() {
     const perPersonInput = document.getElementById('per_person');
     const fractionInput = document.getElementById('fraction');
     const memberMoney = document.querySelectorAll('.member-money');
-    const memberFraction = document.querySelectorAll('.member-fraction');
 
     fairShareButton.addEventListener('click', function() {
         const totalValue = Number(totalInput.value);

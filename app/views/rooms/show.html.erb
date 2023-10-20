@@ -18,7 +18,7 @@
                     <p class="member-name"><%= member.name %></p>
                     <div class="member-result">
                         <p class="member-money">¥ </p>
-                        <p class="member-fraction"></p>
+                        <p class="member-fraction">fraction: 0</p>
 
                     </div>
                 </li>
@@ -68,7 +68,15 @@
                 <span class="share-text">pep person:</span><input type="number" class="share-input" id="per_person" readonly>
                 <span class="share-text">fraction:</span><input type="number" class="share-input" id="fraction" readonly>
             </div>
-            <div class="fraction-area">
+            <div class="pay-select-area">
+                <div class="select-text-area">
+                    <p class="select-text">＜ Pay The Fraction ＞</p>
+                </div>
+                <div class="pay-select">
+                    <% @members.each do |member| %>
+                        <button class="select-member" data-member-id="<%= member.id %>"><%= member.name %></button>
+                    <% end %>
+                </div>
             </div>
         </div>
     </div>

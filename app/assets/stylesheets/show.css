@@ -150,7 +150,7 @@
         }
 
             .share-area {
-                margin-bottom: 20px;
+                margin-bottom: 50px;
             }
 
                 .share-inputs {
@@ -180,5 +180,36 @@
                     }
 
                     .fair-share:hover {
+                        box-shadow: 0 0 12px #424242;
+                    }
+
+            .pay-select-area {
+                margin-bottom: 30px;
+            }
+
+                .select-text-area {
+                    text-align: center;
+                }
+
+                    .select-text {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                .pay-select {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    margin-top: 20px;
+                }
+
+                    .select-member {
+                        background-color: black;
+                        padding: 3px 10px;
+                        border: none;
+                        color: white;
+                    }
+
+                    .select-member:hover {
                         box-shadow: 0 0 12px #424242;
                     }
