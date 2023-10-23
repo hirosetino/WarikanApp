@@ -183,6 +183,20 @@
                         box-shadow: 0 0 12px #424242;
                     }
 
+                    .clear {
+                        background-color: black;
+                        margin-left: 30px;
+                        padding: 0px 10px;
+                        border: none;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+
+                    .clear:hover {
+                        box-shadow: 0 0 12px #424242;
+                    }
+
             .pay-select-area {
                 margin-bottom: 30px;
             }
