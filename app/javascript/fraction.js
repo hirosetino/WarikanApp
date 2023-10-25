@@ -10,9 +10,9 @@ document.addEventListener('turbo:load', function() {
             if (memberFraction) {
                 const fractionInput = document.getElementById('fraction');
                 console.log(memberName); // メンバー名の表示
-                console.log(memberFraction.textContent); // フラクション情報のテキストを表示
+                console.log(memberFraction.value); // フラクション情報のテキストを表示
                 const newFractionValue = Number(fractionInput.value);
-                memberFraction.textContent = `fraction: ${newFractionValue}`;
+                memberFraction.value = Number(memberFraction.value) + newFractionValue;
             } else {
                 console.log('要素が見つかりませんでした');
             }

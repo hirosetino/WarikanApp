@@ -18,7 +18,7 @@
                     <p class="member-name"><%= member.name %></p>
                     <div class="member-result">
                         <p class="member-money">¥ </p>
-                        <p class="member-fraction" data-name="<%= member.name %>">fraction: 0</p>
+                        <span class="member-fraction">fraction: <input type="number" class="fraction-input" data-name="<%= member.name %>" readonly></span>
                     </div>
                 </li>
             <% end %>

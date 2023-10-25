@@ -60,7 +60,7 @@
                     }
 
                     .member-result {
-                        padding: 5px 20px;
+                        padding: 5px 10px;
                         border: 1px solid gray;
                     }
 
@@ -72,6 +72,11 @@
                         .member-fraction {
                             text-align: right;
                             font-size: 18px;
+                        }
+
+                        .fraction-input {
+                            width: 55px;
+                            border: none;
                         }
 
         .member-create-area {
