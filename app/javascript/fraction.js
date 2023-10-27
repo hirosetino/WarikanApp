@@ -5,7 +5,6 @@ document.addEventListener('turbo:load', function() {
         button.addEventListener('click', function() {
             const memberName = button.textContent; // データ属性からメンバーの名前を取得
             const memberFraction = document.querySelector(`[data-name="${memberName}"]`);
-            console.log(memberFraction.textContent);
 
             if (memberFraction) {
                 const fractionInput = document.getElementById('fraction');
