@@ -26,6 +26,7 @@
         }
 
     .member-area {
+        width: 100%;
         margin-bottom: 80px;
     }
 
@@ -39,16 +40,18 @@
             }
 
         .member-main {
+            width: 100%;
             margin-top: 30px;
         }
 
             .member-lists {
                 display: flex;
-                justify-content: center;
                 overflow: scroll;
             }
 
                 .member {
+                    flex-shrink: 0;
+                    width: 200px;
                     margin: 0 20px;
                     padding: 5px 15px;
                 }
@@ -75,9 +78,23 @@
                         }
 
                         .fraction-input {
-                            width: 55px;
+                            width: 65px;
                             border: none;
+                            text-align: center;
                         }
+
+                        .update-fraction-button {
+                            background-color: black;
+                            margin-left: 35px;
+                            border: none;
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        .update-fraction-button:hover {
+                            box-shadow: 0 0 6px #424242;
+                        }
+            
 
         .member-create-area {
             margin-top: 30px;
@@ -99,6 +116,7 @@
     .show-main {
         display: flex;
         justify-content: space-around;
+        width: 100%;
     }
 
         .calculator-area {
@@ -152,6 +170,7 @@
                 }
 
         .warikan-area {
+            width: 650px;
         }
 
             .share-area {
@@ -203,6 +222,7 @@
                     }
 
             .pay-select-area {
+                width: 100%;
                 margin-bottom: 30px;
             }
 
@@ -217,13 +237,15 @@
 
                 .pay-select {
                     display: flex;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
+                    overflow: scroll;
+                    width: 100%;
                     margin-top: 20px;
                 }
 
                     .select-member {
+                        flex-shrink: 0;
                         background-color: black;
+                        margin: 0 20px;
                         padding: 3px 10px;
                         border: none;
                         color: white;

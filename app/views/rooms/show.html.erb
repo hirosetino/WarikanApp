@@ -18,7 +18,12 @@
                     <p class="member-name"><%= member.name %></p>
                     <div class="member-result">
                         <p class="member-money">¥ </p>
-                        <span class="member-fraction">fraction: <input type="number" class="fraction-input" data-name="<%= member.name %>" readonly></span>
+                        <%= form_with(model: @member, url: room_member_path(@room, member), method: :patch) do |f| %>
+                            <span class="member-fraction">fraction: 
+                                <%= f.number_field :fraction, class: "fraction-input", data: { name: member.name }, value: member.fraction, readonly: true %>
+                            </span>
+                            <%= f.submit "Decision", class: "update-fraction-button" %>
+                        <% end %>
                     </div>
                 </li>
             <% end %>
@@ -64,18 +69,18 @@
                     <span class="share-text">total:</span><input type="number" class="share-input" id="total">
                     <button class= "fair-share", id= "fair_share">Fair Share</button>
                     <button class= "clear", id= "clear">Clear</button>
-
                 </div>
                 <span class="share-text">pep person:</span><input type="number" class="share-input" id="per_person" readonly>
-                <span class="share-text">fraction:</span><input type="number" class="share-input" id="fraction" readonly>
+                <span class="share-text">fraction:</span><input type="number" class="share-input" id="fraction_input" readonly>
             </div>
+
             <div class="pay-select-area">
                 <div class="select-text-area">
                     <p class="select-text">＜ Pay The Fraction ＞</p>
                 </div>
                 <div class="pay-select">
                     <% @members.each do |member| %>
-                        <button class="select-member"><%= member.name %></button>
+                    <button class="select-member"><%= member.name %></button>
                     <% end %>
                 </div>
             </div>
