@@ -2,7 +2,7 @@ document.addEventListener('turbo:load', function() {
     const fairShareButton = document.getElementById('fair_share');
     const totalInput = document.getElementById('total');
     const perPersonInput = document.getElementById('per_person');
-    const fractionInput = document.getElementById('fraction');
+    const fractionInput = document.getElementById('fraction_input');
     const memberMoney = document.querySelectorAll('.member-money');
     const clearButton = document.getElementById('clear');
 
@@ -20,6 +20,7 @@ document.addEventListener('turbo:load', function() {
                     const fairShareFraction = (fairShare - parseInt(fairShare)) * memberCount;
                     perPersonInput.value = parseInt(fairShare);
                     fractionInput.value = parseInt(fairShareFraction);
+                    console.log(fractionInput);
 
                     memberMoney.forEach(function(memberMoney) {
                         memberMoney.textContent = '¥ ' + parseInt(fairShare);
