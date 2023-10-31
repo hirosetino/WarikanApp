@@ -1,20 +1,20 @@
 document.addEventListener('turbo:load', function() {
     const memberButtons = document.querySelectorAll('.select-member');
+    let count = 0;
 
     memberButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const memberName = button.textContent; // データ属性からメンバーの名前を取得
+            const memberName = button.textContent;
             const memberFraction = document.querySelector(`[data-name="${memberName}"]`);
+            const fractionInput = document.getElementById('fraction_input');
+            const newFractionValue = Number(fractionInput.value);
 
-            if (memberFraction) {
-                const fractionInput = document.getElementById('fraction');
-                console.log(memberName); // メンバー名の表示
-                console.log(memberFraction.value); // フラクション情報のテキストを表示
-                const newFractionValue = Number(fractionInput.value);
+            if (count < 1) {
                 memberFraction.value = Number(memberFraction.value) + newFractionValue;
             } else {
                 console.log('要素が見つかりませんでした');
             }
+            count ++;
         });
     });
 });
