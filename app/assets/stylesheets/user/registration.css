@@ -1,6 +1,23 @@
 .registration-main {
     width: 100vw;
+    margin-top: 10px;
 }
+
+    .login-back-btn-area {
+        text-align: right;
+    }
+
+        .login-back-btn {
+            margin-right: 10%;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .login-back-btn:hover {
+            text-shadow: 2px 2px 2px gray;
+        }
 
     .registration-container {
         width: 20%;
