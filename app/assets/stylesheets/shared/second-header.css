@@ -1,7 +1,13 @@
     .header-texts {
-        width: 50%;
+        width: 80%;
         height: 100%;
         margin: 0 auto;
         text-align: center;
         line-height: 80px;
+    }
+
+    .language {
+        position: relative;
+        top: -100%;
+        left: 55%;
     }
