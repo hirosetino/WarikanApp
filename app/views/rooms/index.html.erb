@@ -7,16 +7,19 @@
         </div>
 
         <div class="room-create-area">
-            <%= link_to "Room create", "#", class: "room-create-link", id: "open_modal" %>
+            <%= link_to I18n.t('Room create'), "#", class: "room-create-link", id: "open_modal" %>
         </div>
 
         <%= render "shared/modal" %>
 
         <div class="room-area">
-            <p class="room-area-text">＜ Rooms ＞</p>
+            <p class="room-area-text"><%= "＜ #{I18n.t('Rooms')} ＞" %></p>
             <% @rooms.each do |room| %>
             <ul class="room-lists">
-                <li><%= link_to room.room_name, room_path(room.id), class: "room" %></li>
+                <li class="room-flex">
+                    <%= link_to room.room_name, room_path(room.id), class: "room" %>
+                    <%= link_to I18n.t('delete'), room_path(room.id), data: { turbo_method: :delete }, class: "room-delete-btn" %>
+                </li>
             </ul>
             <% end %>
         </div>
