@@ -3,12 +3,12 @@
 <div class="show-container">
     <div class="room-top">
         <p class="room-name"><%= @room.room_name %></p>
-        <%= link_to "<<back", root_path, class: "back-btn" %>
+        <%= link_to "<<#{I18n.t('back')}", root_path, class: "back-btn" %>
     </div>
 
     <div class="member-area">
         <div class="member-area-top">
-            <p class="member-area-text">＜ Member List ＞</p>
+            <p class="member-area-text"><%= "＜ #{I18n.t('Member List')} ＞" %></p>
         </div>
 
         <div class="member-main">
@@ -19,19 +19,20 @@
                     <div class="member-result">
                         <p class="member-money">¥ </p>
                         <%= form_with(model: @member, url: room_member_path(@room, member), method: :patch) do |f| %>
-                            <span class="member-fraction">fraction: 
+                            <span class="member-fraction"><%= I18n.t('fraction') %>
                                 <%= f.number_field :fraction, class: "fraction-input", data: { name: member.name }, value: member.fraction, readonly: true %>
                             </span>
-                            <%= f.submit "Decision", class: "update-fraction-button" %>
+                            <%= f.submit I18n.t('Decision'), class: "update-fraction-button" %>
                         <% end %>
                     </div>
+                    <%= link_to I18n.t('delete'), room_member_path(@room, member), data: { turbo_method: :delete }, class: "member-delete-btn" %>
                 </li>
             <% end %>
             </ul>
         </div>
 
         <div class="member-create-area">
-            <%= link_to "Member create", "#", class: "member-create-link", id: "open_second_modal", data: { member_count: @members.count } %>
+            <%= link_to I18n.t('Member create'), "#", class: "member-create-link", id: "open_second_modal", data: { member_count: @members.count } %>
         </div>
 
         <%= render "shared/second-modal" %>
@@ -66,17 +67,17 @@
         <div class="warikan-area">
             <div class="share-area">
                 <div class="share-inputs">
-                    <span class="share-text">total:</span><input type="number" class="share-input" id="total">
+                    <span class="share-text"><%= I18n.t('total') %></span><input type="number" class="share-input" id="total">
                     <button class= "fair-share", id= "fair_share">Fair Share</button>
                     <button class= "clear", id= "clear">Clear</button>
                 </div>
-                <span class="share-text">pep person:</span><input type="number" class="share-input" id="per_person" readonly>
-                <span class="share-text">fraction:</span><input type="number" class="share-input" id="fraction_input" readonly>
+                <span class="share-text"><%= I18n.t('per person') %></span><input type="number" class="share-input" id="per_person" readonly>
+                <span class="share-text"><%= I18n.t('fraction') %></span><input type="number" class="share-input" id="fraction_input" readonly>
             </div>
 
             <div class="pay-select-area">
                 <div class="select-text-area">
-                    <p class="select-text">＜ Pay The Fraction ＞</p>
+                    <p class="select-text"><%= "＜ #{I18n.t('Pay The Fraction')} ＞" %></p>
                 </div>
                 <div class="pay-select">
                     <% @members.each do |member| %>
