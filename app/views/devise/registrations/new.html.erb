@@ -2,6 +2,10 @@
 
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 
+    <div class="login-back-btn-area">
+        <%= link_to "<<back", new_user_session_path, class: "login-back-btn" %>
+    </div>
+
     <div class="registration-container">
         <div class="registration-top">
             <h1>Account Create</h1>
