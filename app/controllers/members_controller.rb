@@ -14,6 +14,13 @@ class MembersController < ApplicationController
         redirect_to room_path(room.id)
     end
 
+    def destroy
+        room = Room.find(params[:room_id])
+        @member = Member.find(params[:id])
+        @member.destroy
+        redirect_to room_path(room.id)
+    end
+
     def member_count
         member_count = Member.count
         render json: { member_count: member_count }
