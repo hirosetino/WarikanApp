@@ -3,6 +3,8 @@
         <h1 class="header-title">Fair Share</span></h1>
     </div>
     <div class="header-right">
-        <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "log-out" %>
+        <%= link_to I18n.t('Logout'), destroy_user_session_path, data: { turbo_method: :delete }, class: "log-out" %>
+        <%= link_to "English", change_locale_path(locale: :en), class: "en" %> |
+        <%= link_to "日本語", change_locale_path(locale: :ja), class:"ja" %>
     </div>
 </header>
