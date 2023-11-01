@@ -31,3 +31,15 @@
 
 en:
   hello: "Hello world"
+  Logout: "Logout"
+  Room create: "Room create"
+  Rooms: "Rooms"
+  delete: "delete"
+  back: "back"
+  Member List: "Member List"
+  fraction: "fraction:"
+  Decision: "Decision"
+  Member create: "Member create"
+  total: "total:"
+  per person: "per person:"
+  Pay The Fraction: "Pay The Fraction"
