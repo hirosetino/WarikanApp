@@ -47,6 +47,7 @@
             .member-lists {
                 display: flex;
                 overflow: scroll;
+                height: 180px;
             }
 
                 .member {
@@ -94,7 +95,15 @@
                         .update-fraction-button:hover {
                             box-shadow: 0 0 6px #424242;
                         }
-            
+
+                    .member-delete-btn {
+                        color: black;
+                    }
+
+                    .member-delete-btn:hover {
+                        text-shadow: 2px 2px 2px gray;
+                    }
+
 
         .member-create-area {
             margin-top: 30px;
