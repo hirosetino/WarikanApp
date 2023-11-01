@@ -1,5 +1,9 @@
 <header>
     <div class="header-texts">
         <h1 class="header-title">Fair Share</h1>
+        <div class="language">
+            <%= link_to "English", change_locale_path(locale: :en), class: "en" %> |
+            <%= link_to "日本語", change_locale_path(locale: :ja), class: "ja" %>
+        </div>
     </div>
 </header>
