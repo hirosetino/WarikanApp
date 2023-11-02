@@ -30,6 +30,19 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  devise:
+    sessions:
+      new:
+        Account: "Account"
+        email: "email"
+        password: "password"
+        password-placeholder: "6 or more alphanumeric characters"
+        confirmation password: "confirmation password"
+        confirmation password-placeholder: "Reenter password"
+        Login: "Login"
+        sign-up-link-text: "don't have an account"
+        signup: "signup"
+
   hello: "Hello world"
   Logout: "Logout"
   Room create: "Room create"
