@@ -1,4 +1,17 @@
 ja:
+  devise:
+    sessions:
+      new:
+        Account: "アカウント情報"
+        email: "Eメール"
+        password: "パスワード"
+        password-placeholder: "半角英数字6文字以上"
+        confirmation password: "確認用パスワード"
+        confirmation password-placeholder: "パスワード再入力"
+        Login: "ログイン"
+        sign-up-link-text: "アカウントがない場合はこちら"
+        signup: "新規登録"
+
   Logout: "ログアウト"
   Room create: "ルーム作成"
   Rooms: "ルーム一覧"
