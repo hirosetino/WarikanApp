@@ -80,9 +80,18 @@
                     <p class="select-text"><%= "＜ #{I18n.t('Pay The Fraction')} ＞" %></p>
                 </div>
                 <div class="pay-select">
-                    <% @members.each do |member| %>
-                    <button class="select-member"><%= member.name %></button>
-                    <% end %>
+                    <div class="select-member-area">
+                        <% @members.each do |member| %>
+                        <button class="select-member" data-member-name="<%= member.name %>"><%= member.name %></button>
+                        <% end %>
+                    </div>
+                    <div class="random-area">
+                        <p class="random-text">＜ Random Select ＞</p>
+                        <div id="random-display"></div>
+                        <div class="random-btn">
+                            <button id="random">Random</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
