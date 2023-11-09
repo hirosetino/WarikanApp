@@ -27,7 +27,7 @@
 
     .member-area {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
         .member-area-top {
@@ -183,11 +183,11 @@
         }
 
             .share-area {
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
 
                 .share-inputs {
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
                 }
 
                     .share-text {
@@ -245,21 +245,64 @@
                     }
 
                 .pay-select {
-                    display: flex;
                     overflow: scroll;
                     width: 100%;
                     margin-top: 20px;
                 }
 
-                    .select-member {
-                        flex-shrink: 0;
-                        background-color: black;
-                        margin: 0 20px;
-                        padding: 3px 10px;
-                        border: none;
-                        color: white;
+                    .select-member-area {
+                        width: 100%;
                     }
 
-                    .select-member:hover {
-                        box-shadow: 0 0 12px #424242;
+                        .select-member {
+                            flex-shrink: 0;
+                            background-color: black;
+                            margin: 0 20px;
+                            padding: 3px 10px;
+                            border: none;
+                            color: white;
+                        }
+
+                        .select-member:hover {
+                            box-shadow: 0 0 12px #424242;
+                        }
+
+                    .random-area {
+                        width: 100%;
+                        margin-top: 30px;
                     }
+
+                        .random-text {
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+
+                        #random-display {
+                            width: 200px;
+                            height: 50px;
+                            margin: 20px auto;
+                            border: 1px solid black;
+                            text-align: center;
+                            line-height: 50px;
+                            font-size: 18px;
+                        }
+
+                        .random-btn {
+                            width: 80%;
+                            margin: 0 auto;
+                            text-align: center;
+                        }
+
+                            #random {
+                                background-color: black;
+                                padding: 0px 10px;
+                                border: none;
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+
+                            #random:hover {
+                                box-shadow: 0 0 12px #424242;
+                            }
