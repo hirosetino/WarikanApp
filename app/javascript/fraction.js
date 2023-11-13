@@ -9,12 +9,20 @@ document.addEventListener('turbo:load', function() {
             const fractionInput = document.getElementById('fraction_input');
             const newFractionValue = Number(fractionInput.value);
 
-            if (count < 1) {
+            if (0 < fractionInput.value && count < 1) {
                 memberFraction.value = Number(memberFraction.value) + newFractionValue;
-            } else {
-                console.log('要素が見つかりませんでした');
+                count = 1;
             }
-            count ++;
+
+            const clearButton = document.getElementById('clear');
+            let clicked;
+            clearButton.addEventListener('click', function() {
+                if(clicked != true) {
+                    memberFraction.value = Number(memberFraction.value) - newFractionValue;
+                    count = 0;
+                    clicked = true;
+                }
+            });
         });
     });
 });
