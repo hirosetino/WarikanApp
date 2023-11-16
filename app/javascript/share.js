@@ -4,7 +4,6 @@ document.addEventListener('turbo:load', function() {
     const perPersonInput = document.getElementById('per_person');
     const fractionInput = document.getElementById('fraction_input');
     const memberMoney = document.querySelectorAll('.member-money');
-    const clearButton = document.getElementById('clear');
 
     fairShareButton.addEventListener('click', function() {
         const totalValue = Number(totalInput.value);
@@ -30,14 +29,5 @@ document.addEventListener('turbo:load', function() {
             .catch(error => {
                 console.error('Error:', error);
             });
-    });
-
-    clearButton.addEventListener('click', function () {
-        totalInput.value = "";
-        fractionInput.value = "";
-        perPersonInput.value = "";
-        memberMoney.forEach(function(memberMoney) {
-            memberMoney.textContent = '¥ ';
-        });
     });
 });
